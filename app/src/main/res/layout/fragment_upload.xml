@@ -1,0 +1,245 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             xmlns:app="http://schemas.android.com/apk/res-auto"
+             android:background="@color/colorLightGray"
+             android:layout_height="match_parent">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/size_10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <giaodien.admin.doan_googbook.widget.CustomHeaderView
+            android:id="@+id/upload_btn_back"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/size_10dp"
+            app:leftToggle="@mipmap/ic_back"
+            app:title="Đăng tin mới"/>
+
+        <android.support.v4.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/size_12dp"
+            android:layout_marginRight="@dimen/size_10dp"
+            android:layout_marginTop="@dimen/size_10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/upload_doc_info"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/text_size_14sp"/>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/size_10dp"
+                    android:background="@color/colorWhite"
+                    app:cardCornerRadius="@dimen/size_5dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <giaodien.admin.doan_googbook.widget.CustomDocRow
+                            android:id="@+id/upload_doc_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:edtVisual="true"
+                            app:tittle="@string/upload_doc_name"/>
+
+                        <View
+                            style="@style/Divider"
+                            android:layout_marginLeft="@dimen/size_10dp"
+                            android:layout_marginRight="@dimen/size_10dp"/>
+
+                        <giaodien.admin.doan_googbook.widget.CustomDocRow
+                            android:id="@+id/upload_doc_type"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:spinnerVisual="true"
+                            app:tittle="@string/upload_doc_type"/>
+
+                        <View
+                            style="@style/Divider"
+                            android:layout_marginLeft="@dimen/size_10dp"
+                            android:layout_marginRight="@dimen/size_10dp"/>
+
+                        <giaodien.admin.doan_googbook.widget.CustomDocRow
+                            android:id="@+id/upload_doc_level"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:margin="@dimen/size_25dp"
+                            app:spinnerVisual="true"
+                            app:tittle="@string/upload_doc_level"/>
+
+                        <View
+                            style="@style/Divider"
+                            android:layout_marginLeft="@dimen/size_10dp"
+                            android:layout_marginRight="@dimen/size_10dp"/>
+
+                        <giaodien.admin.doan_googbook.widget.CustomDocRow
+                            android:id="@+id/upload_doc_subject"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:edtVisual="true"
+                            app:tittle="@string/upload_doc_subject"/>
+
+                        <View
+                            style="@style/Divider"
+                            android:layout_marginLeft="@dimen/size_10dp"
+                            android:layout_marginRight="@dimen/size_10dp"/>
+
+                        <giaodien.admin.doan_googbook.widget.CustomDocRow
+                            android:visibility="gone"
+                            android:id="@+id/upload_doc_university"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:edtVisual="true"
+                            app:tittle="@string/upload_doc_unversity"/>
+
+                        <View
+                            android:id="@+id/upload_first_divider"
+                            style="@style/Divider"
+                            android:layout_marginLeft="@dimen/size_10dp"
+                            android:layout_marginRight="@dimen/size_10dp"/>
+
+                        <giaodien.admin.doan_googbook.widget.CustomDocRow
+                            android:visibility="gone"
+                            android:id="@+id/upload_doc_year"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:spinnerVisual="true"
+                            app:tittle="@string/upload_doc_year"/>
+
+                        <View
+                            android:id="@+id/upload_second_divider"
+                            style="@style/Divider"
+                            android:layout_marginLeft="@dimen/size_10dp"
+                            android:layout_marginRight="@dimen/size_10dp"/>
+
+                        <giaodien.admin.doan_googbook.widget.CustomDocRow
+                            android:id="@+id/upload_doc_des"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:edtVisual="true"
+                            app:tittle="@string/upload_doc_des"/>
+
+                        <giaodien.admin.doan_googbook.widget.CustomDocRow
+                            android:id="@+id/upload_doc_file_option"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:spinnerVisual="true"
+                            app:tittle="@string/upload_doc_soft_file"/>
+
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <RelativeLayout
+                    android:visibility="gone"
+                    android:id="@+id/upload_layout_doc_file"
+                    android:layout_marginTop="@dimen/size_20dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:id="@+id/upload_layout_tittle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:layout_width="@dimen/size_0dp"
+                            android:layout_height="wrap_content"
+                            android:text="@string/upload_doc_file"
+                            android:textColor="@color/colorBlack"
+                            android:textSize="@dimen/text_size_14sp"/>
+
+                        <ImageView
+                            android:layout_gravity="center"
+                            android:layout_alignParentRight="true"
+                            android:id="@+id/upload_btn_add"
+                            android:src="@mipmap/ic_add"
+                            android:layout_width="@dimen/size_27dp"
+                            android:layout_height="@dimen/size_27dp"/>
+
+                    </LinearLayout>
+
+                    <android.support.v7.widget.CardView
+                        android:layout_below="@+id/upload_layout_tittle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/size_5dp"
+                        android:background="@color/colorWhite"
+                        app:cardCornerRadius="@dimen/size_5dp">
+
+                        <android.support.v7.widget.RecyclerView
+                            android:id="@+id/upload_recycler_doc_file"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:nestedScrollingEnabled="false"/>
+
+                    </android.support.v7.widget.CardView>
+
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/size_25dp"
+                    android:text="@string/upload_doc_image"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/text_size_14sp"/>
+
+                <android.support.v7.widget.CardView
+                    android:layout_marginTop="@dimen/size_10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorWhite"
+                    app:cardCornerRadius="@dimen/size_5dp">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/upload_recycler_img"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:nestedScrollingEnabled="false"/>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.AppCompatButton
+                    android:enabled="false"
+                    android:background="@drawable/selector_btn_upload"
+                    android:id="@+id/upload_btn_upload"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/size_15dp"
+                    android:layout_marginTop="@dimen/size_15dp"
+                    android:text="@string/upload_now"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/text_size_15sp"/>
+
+            </LinearLayout>
+
+        </android.support.v4.widget.NestedScrollView>
+
+    </LinearLayout>
+
+
+</FrameLayout>

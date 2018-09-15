@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/item_doc_root_view"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:padding="@dimen/size_10dp"
+              android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/item_doc_img"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:layout_width="100dp"
+        android:layout_height="160dp"/>
+
+    <TextView
+        android:id="@+id/item_doc_txt_name"
+        android:gravity="left"
+        android:layout_marginTop="@dimen/size_5dp"
+        android:textSize="@dimen/text_size_14sp"
+        android:text="Java"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    
+    <TextView
+        android:id="@+id/item_doc_txt_university"
+        android:gravity="left"
+        android:layout_marginTop="@dimen/size_5dp"
+        android:textSize="@dimen/text_size_14sp"
+        android:text="PTIT"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/item_doc_txt_author"
+        android:gravity="left"
+        android:layout_marginTop="@dimen/size_5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_size_14sp"
+        android:text="Ngoc Trung"
+        android:textColor="#9B9B9B"/>
+
+</LinearLayout>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:background="@color/colorWhite"
+    android:id="@+id/item_my_post_layout_root"
+    android:layout_marginRight="@dimen/size_5dp"
+    android:layout_marginTop="@dimen/size_5dp"
+    android:paddingLeft="@dimen/size_5dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/item_my_post_img"
+            android:layout_gravity="center"
+            android:scaleType="fitXY"
+            android:layout_width="@dimen/size_70dp"
+            android:layout_height="@dimen/size_70dp"/>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_marginLeft="@dimen/size_12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TableRow
+                    android:id="@+id/item_my_post_row_doc_name"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent">
+
+                    <TextView
+                        android:text="@string/upload_doc_name"/>
+
+                    <TextView
+                        android:maxWidth="140dip"
+                        android:id="@+id/item_my_post_txt_doc_name"
+                        android:paddingLeft="@dimen/size_10dp"
+                        android:text="@string/app_name"/>
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/item_my_post_row_doc_type"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent">
+
+                    <TextView
+                        android:text="@string/upload_doc_type"/>
+
+                    <TextView
+                        android:id="@+id/item_my_post_txt_doc_type"
+                        android:paddingLeft="@dimen/size_10dp"
+                        android:text="@string/app_name"/>
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/item_my_post_row_doc_level"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent">
+
+                    <TextView
+                        android:text="@string/upload_doc_level"/>
+
+                    <TextView
+                        android:id="@+id/item_my_post_txt_doc_level"
+                        android:paddingLeft="@dimen/size_10dp"
+                        android:text="@string/app_name"/>
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/item_my_post_row_university"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent">
+
+                    <TextView
+                        android:text="@string/upload_doc_unversity"/>
+
+                    <TextView
+                        android:id="@+id/item_my_post_txt_doc_university"
+                        android:paddingLeft="@dimen/size_10dp"/>
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/item_my_post_row_doc_post_day"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent">
+
+                    <TextView
+                        android:text="@string/upload_doc_post_day"/>
+
+                    <TextView
+                        android:id="@+id/item_my_post_txt_doc_post_day"
+                        android:paddingLeft="@dimen/size_10dp"
+                        android:text="@string/app_name"/>
+
+                </TableRow>
+
+            </TableLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_marginTop="@dimen/size_7dp"
+        style="@style/Divider"/>
+
+
+</LinearLayout>

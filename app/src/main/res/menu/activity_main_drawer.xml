@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:title="@string/drawer_book_type">
+        <menu>
+            <item android:id="@+id/nav_book"
+                  android:title="@string/drawer_book">
+
+                <menu>
+                    <item android:title="Văn học" app:showAsAction="collapseActionView"/>
+                    <item android:title="Toán học" app:showAsAction="collapseActionView"/>
+                </menu>
+
+            </item>
+
+            <item android:id="@+id/nav_lecture"
+                  android:title="@string/drawer_lecture"/>
+
+            <item android:id="@+id/nav_short"
+                  android:title="@string/drawer_short"/>
+
+            <item android:id="@+id/nav_thesis"
+                  android:title="@string/drawer_thesis"/>
+
+            <item android:id="@+id/nav_magazine"
+                  android:title="@string/drawer_magazine"/>
+
+            <item android:id="@+id/nav_image"
+                  android:title="@string/drawer_img"/>
+        </menu>
+    </item>
+
+    <group android:checkableBehavior="single">
+
+        <item android:id="@+id/nav_author"
+              android:title="@string/drawer_author"/>
+
+        <item android:id="@+id/nav_nxb"
+              android:title="@string/drawer_nxb"/>
+    </group>
+
+    <group android:checkableBehavior="single">
+
+    <item android:id="@+id/nav_news"
+          android:title="@string/drawer_news"/>
+
+    <item android:id="@+id/nav_help"
+          android:title="@string/drawer_help"/>
+
+    </group>
+
+    <group android:checkableBehavior="single">
+
+        <item android:id="@+id/nav_sign_in"
+              android:title="@string/drawer_nav_sign_in"/>
+
+        <item android:id="@+id/nav_sign_up"
+              android:title="@string/drawer_sign_up"/>
+
+    </group>
+
+</menu>

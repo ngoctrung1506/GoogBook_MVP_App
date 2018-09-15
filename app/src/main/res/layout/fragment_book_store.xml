@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/book_store_swipe_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+<LinearLayout
+    android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <giaodien.admin.doan_googbook.widget.CustomHeaderView
+        android:layout_marginBottom="@dimen/size_10dp"
+        android:id="@+id/book_store_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:leftToggle="@mipmap/ic_more"/>
+
+    <com.malinskiy.superrecyclerview.SuperRecyclerView
+        android:id="@+id/book_store_recycler_view_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_moreProgress="@layout/view_more_progress"
+        app:mainLayoutId="@layout/layout_recyclerview_verticalscroll"
+        app:recyclerClipToPadding="false"
+        app:recyclerPadding="15dp"
+        app:scrollbarStyle="insideInset"/>
+
+    <com.malinskiy.superrecyclerview.SuperRecyclerView
+        android:id="@+id/book_store_recycler_view_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_moreProgress="@layout/view_more_progress"
+        app:mainLayoutId="@layout/layout_recyclerview_verticalscroll"
+        app:recyclerClipToPadding="false"
+        app:recyclerPadding="15dp"
+        app:scrollbarStyle="insideInset"/>
+
+
+</LinearLayout>
+
+</android.support.v4.widget.SwipeRefreshLayout>
+

@@ -1,0 +1,83 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:background="@color/colorLightGray"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:focusableInTouchMode="true"
+        android:id="@+id/lastest_news_swipe_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v4.widget.NestedScrollView
+            android:importantForAutofill="yes"
+            android:paddingBottom="@dimen/size_10dp"
+            android:paddingLeft="@dimen/size_12dp"
+            android:paddingRight="@dimen/size_10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <android.support.v7.widget.CardView
+                    app:cardBackgroundColor="@color/colorWhite"
+                    app:cardCornerRadius="@dimen/size_5dp"
+                    android:layout_marginTop="@dimen/size_20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:text="Bạn có tài liệu muốn chia sẻ ?"
+                            android:padding="@dimen/size_20dp"
+                            android:textSize="@dimen/text_size_14sp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                        <View
+                            style="@style/Divider"/>
+
+                        <Button
+                            android:id="@+id/lastest_news_btn_upload"
+                            android:src="@color/divider"
+                            android:layout_marginBottom="@dimen/size_15dp"
+                            android:layout_marginLeft="@dimen/size_25dp"
+                            android:layout_marginRight="@dimen/size_25dp"
+                            android:layout_marginTop="@dimen/size_15dp"
+                            android:textColor="@color/mainColor"
+                            android:text="@string/lastest_news_upload_now"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.RecyclerView
+                    android:scrollbarStyle="insideInset"
+                    android:nestedScrollingEnabled="false"
+                    android:layout_marginTop="@dimen/size_15dp"
+                    android:id="@+id/lastest_news_super_recycler"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+        </android.support.v4.widget.NestedScrollView>
+
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+</FrameLayout>

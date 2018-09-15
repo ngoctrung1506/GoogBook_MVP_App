@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="mainColor">#28AAE8</color>
+    <color name="tab_text_color">#D9D9DB</color>
+    <color name="drawerColor">#0078D7</color>
+    <color name="divider">#D4D4D4</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorLightGray">#E8E8E8</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="outside_color_trans">#00000000</color>
+    <color name="outside_color_gray">#66444444</color>
+
+</resources>

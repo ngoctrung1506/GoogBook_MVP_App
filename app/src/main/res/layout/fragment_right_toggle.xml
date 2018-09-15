@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:paddingTop="@dimen/size_15dp"
+    android:paddingLeft="@dimen/size_12dp"
+    android:paddingRight="@dimen/size_10dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <View style="@style/Divider"/>
+
+    <LinearLayout
+        android:id="@+id/right_toggle_layout_personal"
+        android:paddingTop="@dimen/size_15dp"
+        android:paddingBottom="@dimen/size_15dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:id="@+id/right_toggle_avatar"
+            app:civ_border_width="0.5dp"
+            android:src="@drawable/banner"
+            android:layout_width="@dimen/size_45dp"
+            android:layout_height="@dimen/size_45dp"/>
+
+        <TextView
+            android:textStyle="bold"
+            android:text="@string/personal_personal"
+            android:textSize="@dimen/text_size_16sp"
+            android:layout_marginLeft="@dimen/size_25dp"
+            android:layout_gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:layout_gravity="center"
+            android:src="@mipmap/ic_arrow_right"
+            android:layout_width="@dimen/size_25dp"
+            android:layout_height="@dimen/size_25dp"/>
+
+    </LinearLayout>
+
+    <View style="@style/Divider"/>
+
+
+    <LinearLayout
+        android:id="@+id/right_toggle_layout_intro"
+        android:paddingTop="@dimen/size_10dp"
+        android:paddingBottom="@dimen/size_10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:src="@mipmap/ic_info"
+            android:layout_width="@dimen/size_32dp"
+            android:layout_height="@dimen/size_32dp"/>
+
+        <TextView
+            android:text="@string/right_toggle_introduce"
+            android:textSize="@dimen/text_size_15sp"
+            android:layout_marginLeft="@dimen/size_25dp"
+            android:layout_gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:src="@mipmap/ic_arrow_right"
+            android:layout_width="@dimen/size_25dp"
+            android:layout_height="@dimen/size_25dp"/>
+
+    </LinearLayout>
+
+    <View style="@style/Divider"/>
+
+    <LinearLayout
+        android:id="@+id/right_toggle_layout_support"
+        android:paddingTop="@dimen/size_10dp"
+        android:paddingBottom="@dimen/size_10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:src="@mipmap/ic_help"
+            android:layout_width="@dimen/size_30dp"
+            android:layout_height="@dimen/size_30dp"/>
+
+        <TextView
+            android:text="@string/right_toggle_support"
+            android:textSize="@dimen/text_size_15sp"
+            android:layout_marginLeft="@dimen/size_25dp"
+            android:layout_gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:src="@mipmap/ic_arrow_right"
+            android:layout_width="@dimen/size_25dp"
+            android:layout_height="@dimen/size_25dp"/>
+
+    </LinearLayout>
+
+    <View style="@style/Divider"/>
+
+</LinearLayout>

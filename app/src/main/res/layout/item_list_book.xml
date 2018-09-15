@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/size_10dp"
+              android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/item_list_book_type_of_book"
+        android:textColor="#000000"
+        android:layout_alignParentLeft="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_size_15sp"/>
+
+    <TextView
+        android:id="@+id/item_list_book_btn_see_all"
+        android:textColor="@color/mainColor"
+        android:text="@string/item_list_book_see_all"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAllCaps="true"
+        android:textSize="@dimen/text_size_14sp"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:paddingTop="@dimen/size_5dp"
+        android:id="@+id/item_list_book_recycler_view"
+        android:layout_below="@+id/item_list_book_type_of_book"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

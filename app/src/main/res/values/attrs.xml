@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CustomHeaderView">
+        <attr name="leftToggle" format="reference"/>
+        <attr name="imgSearch" format="reference"/>
+        <attr name="title" format="string"/>
+        <attr name="bgColor" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="CustomDocRow">
+        <attr name="tittle" format="string"/>
+        <attr name="edtVisual" format="boolean"/>
+        <attr name="spinnerVisual" format="boolean"/>
+        <attr name="margin" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="CustomSignUpRow">
+        <attr name="leftImg" format="reference"/>
+        <attr name="hint" format="string"/>
+        <attr name="security" format="boolean"/>
+    </declare-styleable>
+</resources>

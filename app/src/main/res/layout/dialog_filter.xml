@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_marginLeft="@dimen/size_12dp"
+    android:layout_marginRight="@dimen/size_12dp"
+    android:background="@color/colorWhite"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TableLayout
+        android:layout_marginTop="@dimen/size_15dp"
+        android:layout_marginLeft="@dimen/size_12dp"
+        android:layout_marginRight="@dimen/size_10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow>
+            <TextView android:text="Nguồn"/>
+
+            <Spinner
+                android:id="@+id/filter_spinner_source"/>
+
+        </TableRow>
+
+        <TableRow>
+            <TextView android:text="@string/upload_doc_name"/>
+
+            <EditText
+                android:layout_marginLeft="@dimen/size_5dp"
+                android:maxWidth="160dip"
+                android:textSize="@dimen/text_size_14sp"
+                android:backgroundTint="@android:color/transparent"
+                android:id="@+id/filter_edt_doc_name"
+                android:hint="@string/filter_input_doc_name"/>
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView android:text="@string/filter_user_name"/>
+
+            <EditText
+                android:maxWidth="160dip"
+                android:layout_marginLeft="@dimen/size_5dp"
+                android:textSize="@dimen/text_size_14sp"
+                android:backgroundTint="@android:color/transparent"
+                android:id="@+id/filter_edt_user_name"
+                android:hint="@string/filter_input_user_name"/>
+
+        </TableRow>
+
+
+        <TableRow>
+
+            <TextView android:text="@string/upload_doc_subject"/>
+
+            <EditText
+                android:maxWidth="160dip"
+                android:layout_marginLeft="@dimen/size_5dp"
+                android:textSize="@dimen/text_size_14sp"
+                android:backgroundTint="@android:color/transparent"
+                android:id="@+id/filter_edt_doc_subject"
+                android:hint="@string/filter_input_doc_subject"/>
+
+        </TableRow>
+
+        <TableRow>
+            <TextView android:text="@string/upload_doc_level"/>
+
+            <Spinner
+                android:id="@+id/filter_spinner_doc_level"/>
+
+        </TableRow>
+
+          <TableRow>
+            <TextView android:text="@string/upload_doc_type"/>
+
+            <Spinner
+                android:id="@+id/filter_spinner_doc_type"/>
+
+        </TableRow>
+
+        <TableRow android:id="@+id/filter_row_university">
+            <TextView android:text="@string/upload_doc_unversity"/>
+
+            <EditText
+                android:maxWidth="160dip"
+                android:layout_marginLeft="@dimen/size_5dp"
+                android:textSize="@dimen/text_size_14sp"
+                android:backgroundTint="@android:color/transparent"
+                android:id="@+id/filter_edt_doc_university"
+                android:hint="@string/filter_input_doc_university"/>
+
+        </TableRow>
+
+        <TableRow android:id="@+id/filter_row_year">
+            <TextView android:text="@string/upload_doc_year"/>
+
+            <Spinner
+                android:id="@+id/filter_spinner_doc_year"/>
+
+        </TableRow>
+
+    </TableLayout>
+
+    <View
+        android:layout_marginTop="@dimen/size_10dp"
+        style="@style/Divider"/>
+
+    <Button
+        android:layout_marginBottom="@dimen/size_8dp"
+        android:textColor="@color/colorWhite"
+        android:id="@+id/filter_btn_find"
+        android:background="@drawable/selector_btn_upload"
+        android:paddingRight="@dimen/size_25dp"
+        android:paddingLeft="@dimen/size_25dp"
+        android:textAllCaps="false"
+        android:text="@string/filter_filter"
+        android:layout_marginTop="@dimen/size_10dp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+</LinearLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    android:orientation="horizontal"
+    android:layout_marginTop="@dimen/size_2dp"
+    android:layout_marginLeft="@dimen/size_2dp"
+    android:layout_marginRight="@dimen/size_5dp"
+    android:layout_marginBottom="@dimen/size_2dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+    <!--+ Các thông tin gồm: ảnh, tên, cấp, môn học sử dụng, trường học, năm học sử dụng, …-->
+    <!--Và để lại các thông tin liên hệ như số điện thoại, email, địa chỉ liên hệ … để liên lạc-->
+
+    <TextView
+        android:paddingTop="@dimen/size_10dp"
+        android:paddingBottom="@dimen/size_10dp"
+        android:id="@+id/layout_doc_row_txt_title"
+        android:gravity="center"
+        android:paddingLeft="@dimen/size_20dp"
+        android:paddingRight="@dimen/size_20dp"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/text_size_14sp"
+        android:text="Tên"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:scrollbars="vertical"
+        android:visibility="gone"
+        android:id="@+id/layout_doc_row_edt_input"
+        android:textSize="@dimen/text_size_14sp"
+        android:textColorHint="@color/colorLightGray"
+        android:hint="Nhap"
+        android:textCursorDrawable="@drawable/bg_cursor"
+        android:backgroundTint="@android:color/transparent"
+        android:gravity="left"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Spinner
+        android:visibility="gone"
+        android:layout_gravity="center"
+        android:id="@+id/layout_doc_row_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"/>
+
+</merge>

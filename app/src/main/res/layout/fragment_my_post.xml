@@ -1,0 +1,32 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:background="@color/colorLightGray"
+             android:layout_height="match_parent"
+             xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- TODO: Update blank fragment layout -->
+   <LinearLayout
+       android:layout_marginTop="@dimen/size_10dp"
+       android:layout_marginLeft="@dimen/size_12dp"
+       android:layout_marginRight="@dimen/size_10dp"
+       android:layout_marginBottom="@dimen/size_10dp"
+       android:orientation="vertical"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+
+       <giaodien.admin.doan_googbook.widget.CustomHeaderView
+           app:title="@string/app_name"
+           app:leftToggle="@mipmap/ic_back"
+           android:id="@+id/my_post_header"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"/>
+
+       <android.support.v7.widget.RecyclerView
+           android:id="@+id/my_post_recycler"
+           android:layout_marginTop="@dimen/size_10dp"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"/>
+
+   </LinearLayout>
+</FrameLayout>

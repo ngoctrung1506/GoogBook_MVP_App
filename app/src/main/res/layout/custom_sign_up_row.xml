@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/size_12dp"
+    android:layout_marginRight="@dimen/size_12dp"
+    android:layout_marginTop="@dimen/size_15dp"
+    android:background="@drawable/bg_login"
+    android:orientation="horizontal"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:id="@+id/custom_sign_up_row_img"
+        android:layout_width="@dimen/size_25dp"
+        android:layout_height="@dimen/size_25dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/size_10dp"
+        android:src="@mipmap/ic_personal"/>
+
+    <View
+        style="@style/Divider"
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/size_10dp"/>
+
+    <EditText
+        android:textCursorDrawable="@drawable/bg_cursor"
+        android:id="@+id/custom_sign_up_row_edt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/size_15dp"
+        android:backgroundTint="@android:color/transparent"
+        android:gravity="center_vertical"
+        android:textSize="@dimen/text_size_15sp"/>
+
+    <Spinner
+        android:layout_gravity="center"
+        android:id="@+id/custom_sign_up_row_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>
+

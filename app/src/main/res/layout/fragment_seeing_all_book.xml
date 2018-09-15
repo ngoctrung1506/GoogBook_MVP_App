@@ -1,0 +1,34 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:background="#ffffff"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <giaodien.admin.doan_googbook.widget.CustomHeaderView
+            android:id="@+id/seeing_all_book_header_view"
+            android:layout_marginLeft="@dimen/size_5dp"
+            android:layout_marginRight="@dimen/size_5dp"
+            android:layout_marginBottom="@dimen/size_5dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            app:leftToggle="@mipmap/ic_back"/>
+
+        <com.malinskiy.superrecyclerview.SuperRecyclerView
+            android:id="@+id/seeing_all_book_recycler_view"
+            android:layout_marginTop="@dimen/size_10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+
+</FrameLayout>

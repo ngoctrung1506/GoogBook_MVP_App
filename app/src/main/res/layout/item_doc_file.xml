@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_marginBottom="@dimen/size_8dp"
+    android:layout_marginTop="@dimen/size_8dp"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_marginLeft="@dimen/size_10dp"
+            android:id="@+id/item_doc_file_btn_choose_file"
+            android:textColor="@color/colorBlack"
+            android:textStyle="normal"
+            android:textSize="@dimen/text_size_14sp"
+            android:gravity="center"
+            android:textAllCaps="false"
+            android:layout_gravity="center"
+            android:text="@string/item_doc_file_choose_file"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"/>
+
+        <TextView
+            android:layout_marginRight="@dimen/size_5dp"
+            android:layout_marginLeft="@dimen/size_5dp"
+            android:id="@+id/item_doc_file_txt_file_name"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:layout_width="@dimen/size_0dp"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:id="@+id/item_doc_file_btn_delete_row"
+            android:src="@mipmap/ic_delete"
+            android:layout_gravity="center"
+            android:layout_width="@dimen/size_30dp"
+            android:layout_height="@dimen/size_30dp"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_marginTop="@dimen/size_5dp"
+        style="@style/Divider"/>
+
+</LinearLayout>

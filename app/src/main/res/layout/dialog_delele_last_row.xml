@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    app:cardCornerRadius="@dimen/size_5dp"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+      <LinearLayout
+              android:orientation="vertical"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content">
+
+       <TextView
+           android:textColor="@color/colorBlack"
+        android:paddingTop="@dimen/size_15dp"
+        android:paddingBottom="@dimen/size_15dp"
+        android:text="Bạn không muốn up file mềm \n cho tài liệu này nữa ?"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+          <View style="@style/Divider"/>
+
+          <LinearLayout
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+              <TextView
+                  android:paddingBottom="@dimen/size_10dp"
+                  android:paddingTop="@dimen/size_10dp"
+                  android:id="@+id/dialog_delele_last_row_true"
+                  android:layout_gravity="center"
+                  android:gravity="center"
+                  android:text="Đúng"
+                  android:layout_weight="1"
+                  android:layout_width="@dimen/size_0dp"
+                  android:layout_height="wrap_content"/>
+
+              <View
+                  android:layout_width="0.5dp"
+                  android:layout_height="match_parent"
+                  style="@style/Divider"/>
+
+              <TextView
+                  android:paddingBottom="@dimen/size_10dp"
+                  android:paddingTop="@dimen/size_10dp"
+                  android:id="@+id/dialog_delele_last_row_wrong"
+                  android:layout_gravity="center"
+                  android:gravity="center"
+                  android:text="Sai"
+                  android:layout_weight="1"
+                  android:layout_width="@dimen/size_0dp"
+                  android:layout_height="wrap_content"/>
+
+          </LinearLayout>
+
+     </LinearLayout>
+
+</android.support.v7.widget.CardView>
